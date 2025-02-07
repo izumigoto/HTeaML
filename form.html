@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width:device-width,initial-scale=1.0">
+        <title style="text-align: center;">Form</title>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+        <hr>
+        <h1 style="text-align: center;">Event Manager</h1>
+        <hr>
+        <main>
+            <div class="form-group">
+                <form action="" method="post">
+                    <div class="event-form">
+                        <label for="name">Name:</label><br>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="event-form">
+                        <label for="Event Date">Event Date:</label><br>
+                        <input type="date" name="Event-date" id="Event-date" required>
+                    </div>
+                    <div class="event-form">
+                        <label for="Event-Time">Event Time:</label><br>
+                        <input type="time" name="Event-time" id="Event-time" required>
+                    </div>
+                    <div class="event-form">
+                        <label for="Event location">Event Location</label><br>
+                        <input type="text" name="Event-location" id="Event-location" required>
+                    </div>
+                    <div class="event-form">
+                        <input type="button" value="Submit" onclick="sub()">
+                        <script>
+                            function sub(){
+                                alert("Form submitted")
+                            }
+                        </script>
+                    </div>
+            </div>
+        </main>
+    </body>
+</html>

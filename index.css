@@ -1,0 +1,77 @@
+.text-box{
+    background-color: rgb(0, 46, 114);
+    color: white;
+    padding:20px;
+    width:60%;
+    margin:20px auto;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+
+
+.center{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 50%;
+}
+
+body {
+    background-image: url('https://images.pexels.com/photos/2397651/pexels-photo-2397651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+button {
+    position: relative;
+    color: white;
+    background-color: blue;
+    font-size: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button::after {
+    content: "You hovered over the button!";
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+button:hover::after {
+    opacity: 1;
+}
+
+button{
+    color:white;
+    background-color: blue;
+    font-size: 20px;
+    padding:15px 30px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+
+}
+
+button:hover{
+    background-color: darkblue;
+}
+
+h1{
+    color: blue;
+    background-image:-o-repeating-linear-gradient();
+}
